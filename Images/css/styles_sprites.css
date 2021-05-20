@@ -1,0 +1,55 @@
+body {
+  margin: 10px;
+}
+
+.bg-dishes {
+  background: url("/Images/images/css-sprite-combined.png") 0px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bg-landing {
+  background: url("/Images/images/css-sprite-combined.png") -100px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bg-rocketship {
+  background: url("/Images/images/css-sprite-combined.png") -200px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bg-saturn {
+  background: url("/Images/images/css-sprite-combined.png") -300px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bg-ufo {
+  background: url("/Images/images/css-sprite-combined.png") -400px -0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.meal:hover {
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
+  filter: grayscale(70%) blur(3px);
+}
+
+.mealHD {
+  width: 400px;
+}

@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box,
+.box2 {
+  width: 150px;
+  height: 150px;
+  background: gold;
+  transition: transform 0.5s, backgroud 0.5s;
+}
+
+.box:hover {
+  transform: rotate(-30deg) scale(1.5) skew(15deg) translate(20px, 10px);
+}
+
+.container {
+  perspective: 200px;
+}
+.container:hover .box {
+  transform: translateZ(50px) rotateY(45deg);
+  transform-origin: 0 50%;
+}
+
+.container:hover .box-special {
+  transform: rotateX(45deg);
+  background: dodgerblue;
+}

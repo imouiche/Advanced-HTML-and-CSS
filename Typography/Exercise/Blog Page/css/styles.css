@@ -1,0 +1,67 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 10px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding: 2rem;
+  color: #222;
+}
+
+div {
+  width: 1140px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: #000;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 5.61rem;
+}
+
+h2 {
+  font-size: 4.209rem;
+}
+
+h3 {
+  font-size: 3.157rem;
+}
+
+h4 {
+  font-size: 2.369rem;
+}
+
+h5 {
+  font-size: 1.777rem;
+}
+
+h6 {
+  font-size: 1.333rem;
+}
+ol li {
+  margin-bottom: 2rem;
+}
+
+div img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+div p {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+}

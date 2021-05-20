@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 15px;
+}
+p {
+  padding: 10px 20px;
+  border: 5px solid gold;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+.box::after {
+  content: "Hello";
+}
+
+/* Overflow*/
+.box1 {
+  border: 3px solid gold;
+  width: 150px;
+  height: 150px;
+  overflow: auto;
+}
+
+/* Measurement units */
+html {
+  /* 62.5% of 16px =10px*/
+  font-size: 62.5%;
+}
+
+.box2 {
+  width: 15rem; /* 50% of the parent element ie body elt*/
+  height: 100vh;
+  background-color: gold;
+  margin: 10px;
+  border-top: 10px solid orange;
+}

@@ -1,0 +1,66 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  height: 900;
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-shadow: 2px 2px 0 #000;
+  word-spacing: 1.5rem;
+}
+
+.hubble {
+  align-items: center;
+  background: url(/Images/Exercises/images/hubber-banner_peloux_c_scale\,w_320.jpg)
+    no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+.hubble .tagline {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  padding: 1.3rem;
+}
+
+@media screen and (min-wodth: 768px) {
+  .hubble {
+    background: url(/Images/Exercises/images/hubber-banner_peloux_c_scale\,w_914.jpg);
+    background-size: cover;
+  }
+  .tagline {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-wodth: 1024px) {
+  .hubble {
+    background: url(/Images/Exercises/images/hubber-banner_peloux_c_scale\,w_1321.jpg);
+    background-size: cover;
+  }
+  .tagline {
+    padding: 6rem;
+  }
+}
+
+@media screen and (min-wodth: 1400px) {
+  .hubble {
+    background: url(/Images/Exercises/images/hubber-banner_peloux_c_scale\,w_1400.jpg);
+    background-size: cover;
+  }
+  .tagline {
+    padding: 9rem;
+  }
+}

@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes pop {
+  % {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.3);
+  }
+
+  50% {
+    transform: rotate(45deg);
+    background: tomato;
+  }
+
+  100% {
+    transfrom: rotate(0deg);
+  }
+}
+.box-special {
+  width: 150px;
+  height: 150px;
+  background: gold;
+}
+
+/*reusable annimation*/
+
+.annimation-pop {
+  animation-name: pop;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}

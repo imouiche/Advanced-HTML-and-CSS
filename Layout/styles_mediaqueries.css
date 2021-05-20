@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background: gold;
+  padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+  background: dodgerblue;
+}
+
+/*Media query -> media type and condition 
+If the screen if wider than 600px then */
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/*for screen wider than 900px*/
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    background: white;
+  }
+}
+
+/*e.g. media query for printers*/
+@media printer {
+  body {
+    font-size: 12pt;
+  }
+
+  .box {
+    padding: 0.5cm;
+  }
+}

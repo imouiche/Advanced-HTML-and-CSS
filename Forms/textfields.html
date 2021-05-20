@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Milligram-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="/Forms/css/textfields.css" />
+  </head>
+  <body>
+    <form>
+      <input type="text" list="countries" autocomplete="off" />
+      <datalist id="countries">
+        <option>Australia</option>
+        <option>Canada</option>
+        <option>India</option>
+        <option>United States</option>
+      </datalist>
+    </form>
+    <form>
+      <select>
+        <optgroup label="Front-end Courses">
+          <option value="1" selected>HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JavaScript</option>
+        </optgroup>
+        <optgroup label="Backend Courses">
+          <option value="1" selected>Node</option>
+          <option value="2">ASP.NET</option>
+          <option value="3">Django</option>
+        </optgroup>
+      </select>
+    </form>
+    <form>
+      <div>
+        <input type="checkbox" id="front-end" />
+        <label class="label-inline" for="front-end"> Front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" id="back-end" checked />
+        <label class="label-inline" for="back-end"> Back-end</label>
+      </div>
+    </form>
+    <form>
+      <div>
+        <input type="radio" name="membership" id="silver" checked />
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="gold" disabled />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
+    </form>
+    <form>
+      <input type="range" min="0" max="100" value="90" />
+    </form>
+    <form>
+      <input type="file" accept=".jpg, .png, audio/*" />
+    </form>
+    <form>
+      <p>Grouping related fields</p>
+      <fieldset>
+        <legend>Billing Address</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+    </form>
+    <form>
+      <p>Hidden fields</p>
+      <input type="hidden" name="course-id" value="1234" />
+    </form>
+    <form>
+      <input type="text" required minlength="3" maxlength="10" />
+      <button type="submit">Submit</button>
+    </form>
+    <form action="https://formspree.io/f/xzbyezva" method="POST">
+      <p>Submitting a form</p>
+      <input type="text" placeholder="Name" name="name" />
+      <input type="text" placeholder="email" name="email" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
